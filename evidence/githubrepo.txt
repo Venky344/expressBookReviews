@@ -1,0 +1,5 @@
+Command:
+curl.exe -s https://api.github.com/repos/yashkadam0001/expressBookReviews | jq '.parent.full_name'
+
+Output:
+"ibm-developer-skills-network/expressBookReviews"

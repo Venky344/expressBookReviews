@@ -1,0 +1,15 @@
+Command:
+curl.exe -i -c ".\coursera_cookies.txt" -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d "{\"username\":\"reviewer_unique_test_123\",\"password\":\"ReviewerPass123!\"}"
+
+Output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 41
+ETag: W/"29-ldhdojv0pqKaca4wRCr3sxVmVfs"
+Set-Cookie: connect.sid=[REDACTED_SESSION_COOKIE]; Path=/; HttpOnly
+Date: Sat, 17 Oct 2026 05:29:39 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"User successfully logged in"}

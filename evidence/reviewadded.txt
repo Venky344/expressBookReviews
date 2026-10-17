@@ -1,0 +1,14 @@
+Command:
+curl.exe -i -b ".\coursera_cookies.txt" -X PUT "http://localhost:5000/customer/auth/review/1?review=Excellent%20book"
+
+Output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 150
+ETag: W/"96-V5Uz7sQ3hCEhNwhF934UsJBV1h4"
+Date: Sat, 17 Oct 2026 05:29:40 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"Review for ISBN 1 by user 'reviewer_unique_test_123' added/updated successfully.","reviews":{"reviewer_unique_test_123":"Excellent book"}}
